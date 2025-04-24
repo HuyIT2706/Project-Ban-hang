@@ -1,0 +1,181 @@
+<!doctype html>
+<html class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <!-- Css -->
+    <link href="./output.css" rel="stylesheet">
+    <script src="../assets/js/styles.js"></script>
+    <title>Grocery Mart</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body class="font-gordita bg-white">
+    <header id="header" class="bg-backgroud-3 dark:bg-bg-dark"></header>
+    <script>
+        load("#header", "./template/header.html")
+    </script>
+    <main class="bg-bg-main pt-5 pb-5">
+        <div class="w-[1340px] max-w-custom mx-auto">
+            <!-- Breadcrumb -->
+            <nav class="text-sm text-gray-500 mb-[30px] bg-[#FFFFFF] rounded-[10px] mobile:text-[12px]">
+                <ol class="flex space-x-2 py-5 pl-5 font-medium">
+                    <li> 
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>&gt;</li>
+                    <li> 
+                        <a href="./checkout.html">checkout</a>
+                    </li>
+                    <li>&gt;</li>
+                    <li>
+                        <a href="./checkoutshop.html">Shipping</a>
+                    </li>
+                    <li>&gt;</li>
+                    <li class="font-semibold text-black">
+                        <a href="./payment.html">Payment method</a> 
+                    </li>
+                </ol>
+            </nav>
+
+            <div class="flex gap-6 tablet-mobile:flex-col">
+                <!-- Left Side -->
+                <div class="flex-1 space-y-6">
+                    <!-- Shipping Info -->
+                    <div class="bg-white rounded-xl shadow p-6">
+                        <div class="flex items-center justify-between">
+                            <h2 class="text-lg font-semibold mb-4">1. Shipping, arrives between <span
+                                    class="text-gray-800">Mon, May 16—Tue, May 24</span></h2>
+
+                            <button class="text-blue-600 hover:underline text-sm  pb-4">✏️ Edit</button>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg flex justify-between items-center cursor-pointer">
+                            <div>
+                                <p class="font-semibold">Imran Khan</p>
+                                <p class="text-sm text-gray-500">Museum of Rajas, Sylhet Sadar, Sylhet 3100.</p>
+                            </div>
+                            <div class="text-green-600 text-xl">&#x2713;</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg flex justify-between items-center mt-5 cursor-pointer">
+                            <div>
+                                <p class="font-semibold">Items details</p>
+                                <p class="text-sm text-gray-500">2 items</p>
+                            </div>
+                            <button class=" font-normal text-sm text-primary-color">View details</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-6">
+                        <h2 class="text-lg font-semibold mb-4">2. Shipping method</h2>
+                        <p class="text-sm mb-4">Available Shipping method</p>
+                        <div class="space-y-4">
+                            <label
+                                class="flex items-center justify-between p-4 border rounded-lg cursor-pointer bg-gray-50">
+                                <div class="flex items-center gap-4">
+                                    <input type="radio" name="shipping" value="fedex" checked
+                                        class="form-radio text-blue-600" />
+                                    <img src="../assets/img/img-payment-1.png" alt="FedEx" class="w-16">
+                                    <div>
+                                        <p class="font-semibold">Fedex Delivery</p>
+                                        <p class="text-sm text-gray-500">Delivery: 2-3 days work</p>
+                                    </div>
+                                </div>
+                                <div class="text-green-600">Free &#x2713;</div>
+                            </label>
+
+                            <label class="flex items-center justify-between p-4 border rounded-lg cursor-pointer">
+                                <div class="flex items-center gap-4">
+                                    <input type="radio" name="shipping" value="dhl" class="form-radio text-blue-600" />
+                                    <img src="../assets/img/img-payment-2.png" alt="DHL" class="w-16">
+                                    <div>
+                                        <p class="font-semibold">DHL Delivery</p>
+                                        <p class="text-sm text-gray-500">Delivery: 2-3 days work</p>
+                                    </div>
+                                </div>
+                                <div class="text-gray-700">$12.00</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Payment Details -->
+                <div class="w-full lg:w-1/3 bg-white rounded-xl shadow p-6 space-y-4">
+                    <h2 class="text-lg font-semibold">Payment Details</h2>
+                    <p class="text-sm text-gray-500">Complete your purchase item by providing your payment details
+                        order.</p>
+
+                    <input type="email" placeholder="example@gmail.com"
+                        class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border focus:border-blue-400" />
+                    <input type="text" placeholder="Card Holder"
+                        class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border focus:border-blue-400" />
+                    <input type="text" placeholder="Card Details"
+                        class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border focus:border-blue-400" />
+
+                    <div class="flex gap-4">
+                        <input type="text" placeholder="MM/YY"
+                            class="w-1/2 border rounded-lg px-4 py-2 text-sm outline-none focus:border focus:border-blue-400" />
+                        <input type="text" placeholder="CVC"
+                            class="w-1/2 border rounded-lg px-4 py-2 text-sm outline-none focus:border focus:border-blue-400" />
+                    </div>
+
+                    <div class="border-t pt-4 space-y-2 text-sm">
+                        <div class="flex justify-between font-medium">
+                            <span>Subtotal (items)</span>
+                            <span>3</span>
+                        </div>
+                        <div class="flex justify-between font-medium">
+                            <span>Price (Total)</span>
+                            <span>$191.65</span>
+                        </div>
+                        <div class="flex justify-between font-medium">
+                            <span>Shipping</span>
+                            <span>$10.00</span>
+                        </div>
+                        <div class="flex justify-between font-semibold text-base border-t pt-2">
+                            <span>Estimated Total</span>
+                            <span>$201.65</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="w-full bg-yellow-400 hover:bg-yellow-500 text-primary-color font-semibold py-3 rounded-lg text-lg">
+                        Pay $465.98
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer id="footer" class="py-[50px] bg-[#eee]"></footer>
+    <script>
+        load("#footer", "./template/footer.html")
+    </script>
+</body>
+
+</html>

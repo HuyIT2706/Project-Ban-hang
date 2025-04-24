@@ -1,0 +1,207 @@
+<!doctype html>
+<html class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <!-- Css -->
+    <link href="./output.css" rel="stylesheet">
+    <script src="../assets/js/styles.js"></script>
+    <title>Grocery Mart</title>
+</head>
+
+<body class="font-gordita bg-white">
+    <header id="header" class="bg-backgroud-3 dark:bg-bg-dark"></header>
+    <script>
+        load("#header", "./template/header.html")
+    </script>
+    <div class="max-w-custom mx-auto py-6 flex flex-col lg:flex-row gap-6">
+        <!-- Sidebar -->
+        <aside class="w-full lg:w-1/4 bg-white rounded-xl shadow p-6">
+            <div class="flex flex-col items-center text-center">
+                <img src="../assets/img/Profile.png" alt="Avatar" class="w-24 h-24 rounded-full mb-2">
+                <p class="font-semibold">Imran Khan</p>
+                <p class="text-sm text-gray-500">Registered: 17th May 2022</p>
+            </div>
+            <nav class="mt-6 space-y-4 text-sm">
+                <div>
+                    <p class="text-gray-700 font-semibold mb-2">Manage Account</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600 hover:text-blue-500"> 
+                            <a href="./info.html">
+                                <span>👤</span> Personal info
+                            </a>
+                            </li>
+                        <li class="flex items-center gap-2 text-gray-600 hover:text-blue-500"> 
+                            <a href="#!">
+                                <span>📍</span> Addresses
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600 hover:text-blue-500"> 
+                            <a href="#!">
+                                <span>🔒</span> Communications & privacy
+                            </a>
+                            </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-gray-700 font-semibold mb-2">My items</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600 hover:text-blue-500"> 
+                            <a href="#!">
+                                <span>🔄</span> Reorder
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600 hover:text-blue-500"> 
+                            <a href="#!">
+                                <span>💖</span> Lists
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600 hover:text-blue-500"> 
+                            <a href="#!">
+                                <span>🎁</span> Registries
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-gray-700 font-semibold mb-2">Subscriptions & plans</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600 hover:text-blue-500"> 
+                            <a href="#!">
+                                <span>🛡️</span> Protection plans
+                            </a>
+                            </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-gray-700 font-semibold mb-2">Customer Service</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600 hover:text-blue-500"> 
+                            <a href="#!">
+                                <span>❓</span> Help
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-600 hover:text-blue-500"> 
+                            <a href="#!">
+                                <span>📄</span> Terms of Use
+                            </a>
+                            </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 space-y-6">
+            <!-- Wallet Section -->
+            <section class="bg-white rounded-xl shadow p-6 w-full mobile:p-2 table-pc:w-[90%]">
+                <h2 class="text-xl font-semibold mb-4">My Wallet</h2>
+                <p class="text-sm text-gray-500 mb-4">Payment methods</p>
+                <div class="flex gap-4">
+                    <div class="bg-blue-900 text-white p-4 rounded-lg w-64 mobile:w-[12] mobile:p-[5px]">
+                        <div class="text-sm">FeatherCard</div>
+                        <div class="text-lg font-semibold tracking-widest mt-2">1234 4567 8901 2221</div>
+                        <div class="flex justify-between text-xs mt-4">
+                            <span>Card Holder<br><strong>Imran Khan</strong></span>
+                            <span>Expired<br><strong>10/22</strong></span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 text-white p-4 rounded-lg w-64 mobile:w-[12] mobile:p-[5px]">
+                        <div class="text-sm">FeatherCard</div>
+                        <div class="text-lg font-semibold tracking-widest mt-2">1234 4567 8901 2221</div>
+                        <div class="flex justify-between text-xs mt-4">
+                            <span>Card Holder<br><strong>Imran Khan</strong></span>
+                            <span>Expired<br><strong>11/22</strong></span>
+                        </div>
+                    </div>
+                    <a href="./add-card.html"
+                        class="border-dashed border-2 border-gray-300 p-4 rounded-lg w-64 mobile:w-[12] mobile:p-[5px] flex items-center justify-center cursor-pointer">
+                        <div class="text-gray-400 text-sm">+<br>Add New Card</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Account Info -->
+            <section class="bg-white rounded-xl shadow p-6 table-pc:w-[90%]">
+                <h2 class="text-xl font-semibold mb-4">Account info</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-100 p-4 rounded-lg text-sm">
+                        <p class="text-gray-500">Email Address</p>
+                        <p class="font-semibold">tarek97.ta@gmail.com</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg text-sm">
+                        <p class="text-gray-500">Phone number</p>
+                        <p class="font-semibold">+000 11122 2345 657</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg text-sm col-span-full">
+                        <p class="text-gray-500">Add an address</p>
+                        <p class="font-semibold">Bangladesh Embassy, Washington, DC 20008</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lists Section -->
+            <section class="bg-white rounded-xl shadow p-6 table-pc:w-[90%]">
+                <h2 class="text-xl font-semibold mb-4">Lists</h2>
+                <p class="text-sm text-gray-500 mb-2">2 items - Primary</p>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center border-b pb-4 mobile:flex-col">
+                        <div class="flex items-center gap-4">
+                            <img src="../assets/img/img-card-1.png"
+                                class="w-16 h-20 object-cover" alt="Coffee Beans">
+                            <div>
+                                <p class="font-semibold">Coffee Beans - Espresso Arabica and Robusta Beans</p>
+                                <p class="text-gray-700">$47.00</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-yellow-400 hover:bg-yellow-500 text-primary-color font-semibold px-4 py-2 rounded-[20px]">Add
+                            to cart</button>
+                    </div>
+
+                    <div class="flex justify-between items-center mobile:flex-col">
+                        <div class="flex items-center gap-4 ">
+                            <img src="../assets/img/img-card-2.png"
+                                class="w-16 h-20 object-cover" alt="Lavazza Coffee">
+                            <div>
+                                <p class="font-semibold">Lavazza Coffee Blends - Try the Italian Espresso</p>
+                                <p class="text-gray-700">$53.00</p>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-yellow-400 hover:bg-yellow-500 text-primary-color font-semibold px-4 py-2 rounded-[20px]">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer id="footer" class="py-[50px] bg-[#eee]"></footer>
+    <script>
+        load("#footer", "./template/footer.html")
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <!-- Css -->
+    <link href="./output.css" rel="stylesheet">
+    <script src="../assets/js/styles.js"></script>
+    <title>Grocery Mart</title>
+</head>
+
+<body class="font-gordita bg-white">
+    <header id="header" class="bg-backgroud-3 dark:bg-bg-dark"></header>
+    <script>
+        load("#header", "./template/header.html")
+    </script>
+    <div class="max-w-custom mx-auto py-6 flex flex-col lg:flex-row gap-6">
+        <!-- Sidebar -->
+        <aside class="w-full lg:w-1/4 bg-white rounded-xl shadow p-6">
+            <div class="flex flex-col items-center text-center">
+                <img src="../assets/img/Profile.png" alt="Avatar" class="w-24 h-24 rounded-full mb-2">
+                <p class="font-semibold">Imran Khan</p>
+                <p class="text-sm text-gray-500">Registered: 17th May 2022</p>
+            </div>
+            <nav class="mt-6 space-y-4 text-sm">
+                <div>
+                    <p class="text-gray-700 font-semibold mb-2">Manage Account</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600"><span>👤</span> Personal info</li>
+                        <li class="flex items-center gap-2 text-gray-600"><span>📍</span> Addresses</li>
+                        <li class="flex items-center gap-2 text-gray-600"><span>🔒</span> Communications & privacy</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-gray-700 font-semibold mb-2">My items</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600"><span>🔄</span> Reorder</li>
+                        <li class="flex items-center gap-2 text-gray-600"><span>💖</span> Lists</li>
+                        <li class="flex items-center gap-2 text-gray-600"><span>🎁</span> Registries</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-gray-700 font-semibold mb-2">Subscriptions & plans</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600"><span>🛡️</span> Protection plans</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-gray-700 font-semibold mb-2">Customer Service</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-600"><span>❓</span> Help</li>
+                        <li class="flex items-center gap-2 text-gray-600"><span>📄</span> Terms of Use</li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <!-- Main Content -->
+        <div class=" p-8 bg-white shadow rounded-xl w-full">
+            <div class="mb-6">
+                <a href="./profile.html"  class="text-primary-color font-medium text-base flex items-center gap-2 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                    Personal info
+                </a>
+            </div>
+
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Full name</label>
+                        <input type="text" placeholder="Imran Khan" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Email address</label>
+                        <input type="email" placeholder="admin@uihut.com" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Phone number</label>
+                        <input type="text" placeholder="+008 01234 56789"
+                            class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Password</label>
+                        <input type="password" placeholder="•••••••••" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
+                    </div>
+                </div>
+                <div class="flex justify-end gap-4">
+                    <button type="button" class="text-sm text-gray-600">Cancel</button>
+                    <button type="submit"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-primary-color rounded-[30px] font-semibold px-6 py-2 text-sm">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer id="footer" class="py-[50px] bg-[#eee]"></footer>
+    <script>
+        load("#footer", "./template/footer.html")
+    </script>
+
+</body>
+
+</html>
