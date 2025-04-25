@@ -1,3 +1,7 @@
 exclude:
   - node_modules/
   
+plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  # Xóa jekyll-optional-front-matter
