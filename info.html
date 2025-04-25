@@ -5,35 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Fonts -->
-    <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
     <!-- Css -->
-    <link href="../output.css" rel="stylesheet">
-    <script src="../assets/js/styles.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <script src="./assets/js/styles.js"></script>
     <title>Grocery Mart</title>
 </head>
 
 <body class="font-gordita bg-white">
     <header id="header" class="bg-backgroud-3 dark:bg-bg-dark"></header>
     <script>
-        load("#header", "./template/header.html")
+        load("#header", "./src/template/header.html")
     </script>
     <div class="max-w-custom mx-auto py-6 flex flex-col lg:flex-row gap-6">
         <!-- Sidebar -->
@@ -83,51 +83,35 @@
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
-                    Add credit or debit card
+                    Personal info
                 </a>
             </div>
 
             <form class="space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-sm font-medium mb-1">First Name</label>
-                        <input type="text" placeholder="Imran" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
+                        <label class="block text-sm font-medium mb-1">Full name</label>
+                        <input type="text" placeholder="Imran Khan" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
                     </div>
                     <div>
-                        <label class="block text-sm font-medium mb-1">Last Name</label>
-                        <input type="text" placeholder="Khan" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
+                        <label class="block text-sm font-medium mb-1">Email address</label>
+                        <input type="email" placeholder="admin@uihut.com" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
                     </div>
                     <div>
-                        <label class="block text-sm font-medium mb-1">Card Information</label>
-                        <input type="text" placeholder="Card Number"
+                        <label class="block text-sm font-medium mb-1">Phone number</label>
+                        <input type="text" placeholder="+008 01234 56789"
                             class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
                     </div>
                     <div>
-                        <label class="block text-sm font-medium mb-1">Expiration Date</label>
-                        <input type="text" placeholder="MM/YY" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium mb-1">CVV</label>
-                        <input type="text" placeholder="123" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium mb-1">Phone Number</label>
-                        <input type="text" placeholder="017" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
+                        <label class="block text-sm font-medium mb-1">Password</label>
+                        <input type="password" placeholder="•••••••••" class="w-full border rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400" />
                     </div>
                 </div>
-
-                <div>
-                    <label class="inline-flex items-center">
-                        <input type="checkbox" class="form-checkbox text-indigo-600" checked />
-                        <span class="ml-2 text-sm font-medium">Set as default card</span>
-                    </label>
-                </div>
-
                 <div class="flex justify-end gap-4">
                     <button type="button" class="text-sm text-gray-600">Cancel</button>
                     <button type="submit"
                         class="bg-yellow-400 hover:bg-yellow-500 text-primary-color rounded-[30px] font-semibold px-6 py-2 text-sm">
-                        Save Card
+                        Save
                     </button>
                 </div>
             </form>
@@ -135,7 +119,7 @@
     </div>
     <footer id="footer" class="py-[50px] bg-[#eee]"></footer>
     <script>
-        load("#footer", "./template/footer.html")
+        load("#footer", "./src/template/footer.html")
     </script>
 
 </body>
